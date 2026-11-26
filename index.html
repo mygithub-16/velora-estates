@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="VELORA Estates — a fictional premium real-estate portfolio concept."
+    />
+    <title>VELORA Estates | Property, considered</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="VELORA Estates home">VELORA<span>®</span></a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="#collection">Collection</a>
+        <a href="#approach">Our approach</a>
+        <a class="nav-cta" href="#enquire">Make an enquiry <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="A calm, modern architectural residence"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="eyebrow eyebrow-light">An independent property concept</p>
+          <h1 id="hero-title">A more considered way to find your place.</h1>
+          <p class="hero-copy">VELORA is a fictional premium real-estate brand concept shaped around spaces with a strong sense of place.</p>
+          <a class="button button-light" href="#collection">Explore the collection <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-caption">Image for visual direction only</p>
+      </section>
+
+      <section class="intro section container" aria-labelledby="intro-title">
+        <p class="eyebrow">The VELORA perspective</p>
+        <div class="intro-grid">
+          <h2 id="intro-title">Places chosen for how they make you feel.</h2>
+          <div>
+            <p>Every home begins with a feeling: morning light across stone, a view that slows the day down, a layout that simply works. This homepage is an initial visual study, not a live property catalogue.</p>
+            <a class="text-link" href="#approach">Discover our approach <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection section" id="collection" aria-labelledby="collection-title">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Featured listings</p>
+            <h2 id="collection-title">Spaces with a point of view.</h2>
+          </div>
+          <p class="section-note">All listings are fictional portfolio studies</p>
+        </div>
+
+        <form class="listing-filters container" data-listing-filters>
+          <div class="filter-field">
+            <label for="property-type">Property type</label>
+            <select id="property-type" name="property-type">
+              <option value="">All property types</option>
+              <option value="detached-residence">Detached residence</option>
+              <option value="penthouse">Penthouse</option>
+              <option value="garden-villa">Garden villa</option>
+              <option value="coastal-retreat">Coastal retreat</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="property-location">Location</label>
+            <select id="property-location" name="property-location">
+              <option value="">All locations</option>
+              <option value="northhaven">Northhaven</option>
+              <option value="solmere">Solmere</option>
+              <option value="ashborne">Ashborne</option>
+              <option value="cressida-bay">Cressida Bay</option>
+            </select>
+          </div>
+          <button class="filter-clear" type="button" data-clear-filters disabled>Clear filters</button>
+        </form>
+
+        <div class="property-grid container" data-property-grid>
+          <article class="property-card property-card-featured" data-property-type="detached-residence" data-property-location="northhaven">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A warm, contemporary living room opening to greenery" />
+            <div class="card-content">
+              <div class="listing-heading">
+                <div>
+                  <p class="eyebrow">Fictional listing - Detached residence</p>
+                  <h3>Willow House</h3>
+                  <p class="listing-location">Arden Vale, Northhaven</p>
+                </div>
+                <p class="listing-price">GBP 2,850,000</p>
+              </div>
+              <dl class="listing-details">
+                <div><dt>Bedrooms</dt><dd>5</dd></div>
+                <div><dt>Bathrooms</dt><dd>4</dd></div>
+                <div><dt>Internal area</dt><dd>4,120 sq ft</dd></div>
+              </dl>
+              <div class="property-actions">
+                <button class="property-view-button" type="button" data-view-property aria-haspopup="dialog">View property <span aria-hidden="true">↗</span></button>
+                <a href="#enquire" aria-label="Enquire about Willow House, a fictional listing">Enquire <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="property-card" data-property-type="penthouse" data-property-location="solmere">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A refined interior with natural stone and timber finishes" loading="lazy" />
+            <div class="card-content">
+              <div class="listing-heading">
+                <div>
+                  <p class="eyebrow">Fictional listing - Penthouse</p>
+                  <h3>Atelier Eight</h3>
+                  <p class="listing-location">Meridian Quay, Solmere</p>
+                </div>
+                <p class="listing-price">GBP 1,950,000</p>
+              </div>
+              <dl class="listing-details">
+                <div><dt>Bedrooms</dt><dd>3</dd></div>
+                <div><dt>Bathrooms</dt><dd>3</dd></div>
+                <div><dt>Internal area</dt><dd>2,080 sq ft</dd></div>
+              </dl>
+              <div class="property-actions">
+                <button class="property-view-button" type="button" data-view-property aria-haspopup="dialog">View property <span aria-hidden="true">↗</span></button>
+                <a href="#enquire" aria-label="Enquire about Atelier Eight, a fictional listing">Enquire <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="property-card" data-property-type="garden-villa" data-property-location="ashborne">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A modern home surrounded by a landscaped garden" loading="lazy" />
+            <div class="card-content">
+              <div class="listing-heading">
+                <div>
+                  <p class="eyebrow">Fictional listing - Garden villa</p>
+                  <h3>The Walled Garden</h3>
+                  <p class="listing-location">Larkfield, Ashborne</p>
+                </div>
+                <p class="listing-price">GBP 1,475,000</p>
+              </div>
+              <dl class="listing-details">
+                <div><dt>Bedrooms</dt><dd>4</dd></div>
+                <div><dt>Bathrooms</dt><dd>3</dd></div>
+                <div><dt>Internal area</dt><dd>3,240 sq ft</dd></div>
+              </dl>
+              <div class="property-actions">
+                <button class="property-view-button" type="button" data-view-property aria-haspopup="dialog">View property <span aria-hidden="true">↗</span></button>
+                <a href="#enquire" aria-label="Enquire about The Walled Garden, a fictional listing">Enquire <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="property-card" data-property-type="coastal-retreat" data-property-location="cressida-bay">
+            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A calm courtyard pool beside a contemporary home" loading="lazy" />
+            <div class="card-content">
+              <div class="listing-heading">
+                <div>
+                  <p class="eyebrow">Fictional listing - Coastal retreat</p>
+                  <h3>Salt House</h3>
+                  <p class="listing-location">Morrow Point, Cressida Bay</p>
+                </div>
+                <p class="listing-price">GBP 3,200,000</p>
+              </div>
+              <dl class="listing-details">
+                <div><dt>Bedrooms</dt><dd>5</dd></div>
+                <div><dt>Bathrooms</dt><dd>5</dd></div>
+                <div><dt>Internal area</dt><dd>4,680 sq ft</dd></div>
+              </dl>
+              <div class="property-actions">
+                <button class="property-view-button" type="button" data-view-property aria-haspopup="dialog">View property <span aria-hidden="true">↗</span></button>
+                <a href="#enquire" aria-label="Enquire about Salt House, a fictional listing">Enquire <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="listing-empty-state container" data-empty-state hidden role="status">No fictional listings match those filters. Try clearing one or both selections.</p>
+      </section>
+
+      <section class="approach section" id="approach" aria-labelledby="approach-title">
+        <div class="container approach-grid">
+          <div class="approach-image">
+            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="A serene architectural courtyard with a pool" loading="lazy" />
+          </div>
+          <div class="approach-copy">
+            <p class="eyebrow">The experience</p>
+            <h2 id="approach-title">Clear advice. Unhurried decisions.</h2>
+            <p>From the first conversation to the final detail, the VELORA experience is designed to feel personal, informed, and refreshingly straightforward.</p>
+            <a class="button button-dark" href="#enquire">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="enquiry" id="enquire" aria-labelledby="enquiry-title">
+        <div class="container enquiry-content">
+          <p class="eyebrow eyebrow-light">Find your next chapter</p>
+          <h2 id="enquiry-title">Let’s begin with a conversation.</h2>
+          <p class="enquiry-intro">This is a frontend demonstration only. No enquiry is transmitted to an agency or stored anywhere.</p>
+
+          <form class="enquiry-form" data-enquiry-form novalidate>
+            <div class="enquiry-field">
+              <label for="enquiry-name">Full name <span aria-hidden="true">*</span></label>
+              <input id="enquiry-name" name="full-name" type="text" autocomplete="name" required aria-describedby="enquiry-name-error" />
+              <p class="form-error" id="enquiry-name-error" data-error-for="enquiry-name" role="alert" hidden></p>
+            </div>
+            <div class="enquiry-field">
+              <label for="enquiry-email">Email address <span aria-hidden="true">*</span></label>
+              <input id="enquiry-email" name="email" type="email" autocomplete="email" required aria-describedby="enquiry-email-error" />
+              <p class="form-error" id="enquiry-email-error" data-error-for="enquiry-email" role="alert" hidden></p>
+            </div>
+            <div class="enquiry-field">
+              <label for="enquiry-phone">Phone number <span class="field-optional">Optional</span></label>
+              <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="enquiry-field">
+              <label for="enquiry-property">Property of interest</label>
+              <select id="enquiry-property" name="property-interest">
+                <option value="">Select a fictional listing</option>
+                <option value="Willow House">Willow House</option>
+                <option value="Atelier Eight">Atelier Eight</option>
+                <option value="The Walled Garden">The Walled Garden</option>
+                <option value="Salt House">Salt House</option>
+              </select>
+            </div>
+            <div class="enquiry-field enquiry-field-wide">
+              <label for="enquiry-message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="enquiry-message" name="message" rows="5" required aria-describedby="enquiry-message-error"></textarea>
+              <p class="form-error" id="enquiry-message-error" data-error-for="enquiry-message" role="alert" hidden></p>
+            </div>
+            <button class="button button-light enquiry-submit" type="submit">Submit demonstration enquiry <span aria-hidden="true">↗</span></button>
+          </form>
+
+          <div class="enquiry-success" data-enquiry-success hidden tabindex="-1" role="status">
+            <p class="eyebrow eyebrow-light">Demonstration complete</p>
+            <h3>Thank you for your enquiry.</h3>
+            <p>Your form passed local validation only. No message was transmitted or stored.</p>
+            <button class="button button-light" type="button" data-enquiry-reset>Start another demonstration <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="brand" href="#top" aria-label="VELORA Estates home">VELORA<span>®</span></a>
+        <p>Fictional real-estate portfolio concept. Imagery is for visual direction only.</p>
+        <p>© <span data-current-year></span> VELORA Estates</p>
+      </div>
+    </footer>
+
+    <dialog class="property-modal" data-property-modal aria-labelledby="modal-property-name">
+      <div class="property-modal-content">
+        <button class="property-modal-close" type="button" data-modal-close aria-label="Close property details">Close <span aria-hidden="true">×</span></button>
+        <div class="property-modal-image">
+          <img data-modal-image src="" alt="" />
+        </div>
+        <div class="property-modal-details">
+          <p class="eyebrow" data-modal-type>Fictional listing</p>
+          <h2 id="modal-property-name" data-modal-name></h2>
+          <p class="modal-location" data-modal-location></p>
+          <p class="modal-price" data-modal-price></p>
+          <dl class="modal-specifications">
+            <div><dt>Bedrooms</dt><dd data-modal-bedrooms></dd></div>
+            <div><dt>Bathrooms</dt><dd data-modal-bathrooms></dd></div>
+            <div><dt>Internal area</dt><dd data-modal-area></dd></div>
+          </dl>
+          <p class="modal-notice">This is a fictional property listing created for the VELORA portfolio project.</p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
